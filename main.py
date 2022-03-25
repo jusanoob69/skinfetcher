@@ -10,16 +10,16 @@ def main():
     ascii_banner = pyfiglet.figlet_format("Tyrone skin fetcher")
 
     print(ascii_banner)
-    # time.sleep(1)
+    time.sleep(1)
 
     print("starting up please wait")
-    # time.sleep(5)
+    time.sleep(5)
 
     print("Hey thanks for using Tyrones Teeworlds skin grabber! Please choose from one of the following options below:")
-    # time.sleep(1)
+    time.sleep(1)
 
     print("Here are the lists of the current websites available to search for skins on")
-    # time.sleep(0.5)
+    time.sleep(0.5)
 
     print(options)
     reply = input("What website do you wish to search for skins on? ").strip()
