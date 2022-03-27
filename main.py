@@ -1,9 +1,10 @@
 import time, pyfiglet
-from search_skin import search
+from search_skin import search , all
 
 options = {
     "twd": "Teeworlds data",
-    "ddnet": "DDNet skin library"
+    "ddnet": "DDNet skin library",
+    "all" : "Search all avaiable websites"
 }
 
 def main():
@@ -13,7 +14,7 @@ def main():
     time.sleep(1)
 
     print("starting up please wait")
-    time.sleep(5)
+    time.sleep(3)
 
     print("Hey thanks for using Tyrones Teeworlds skin grabber! Please choose from one of the following options below:")
     time.sleep(1)
@@ -28,6 +29,8 @@ def main():
         search("https://skins.tw/search/")
     elif (reply == "ddnet" or reply == "ddnet skin libary"):
         search("https://ddnet.tw/skins/index.php?search=")
+    elif(reply == "all" or reply == "Search all avaiable websites"):
+        all()
     else:
         print("Sorry that was not a option!")
 
